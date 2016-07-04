@@ -96,7 +96,8 @@ namespace Northwind.Store.UI.Web.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "RegionID,RegionDescription,RowVersion,ModifiedProperties")] Region region)
+        //public ActionResult Edit([Bind(Include = "RegionID,RegionDescription,RowVersion,ModifiedProperties")] Region region)
+        public ActionResult Edit([Bind(Include = "RegionID,RegionDescription,RowVersion")] Region region)
         {
             if (ModelState.IsValid)
             {
